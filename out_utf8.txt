@@ -1,0 +1,133 @@
+﻿
+> hrms-frontend@0.1.0 dev
+> next dev
+
+   Γû▓ Next.js 15.5.9
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.8:3000
+   - Environments: .env.development, .env
+
+ Γ£ô Starting...
+It looks like you're trying to use TypeScript but do not have the required package(s) installed.
+Installing dependencies
+
+If you are not trying to use TypeScript, please remove the tsconfig.json file from your package root (and any TypeScript files in your app and pages directories).
+
+
+Installing devDependencies (npm):
+- typescript
+- @types/react
+
+node.exe : npm error code 
+ERESOLVE
+At C:\Program 
+Files\nodejs\npm.ps1:29 
+char:3
++   & $NODE_EXE $NPM_CLI_JS 
+$args
++   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (npm err  
+  or code ERESOLVE:String)   
+  [], RemoteException
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+npm error ERESOLVE could not 
+resolve
+npm error
+npm error While resolving: 
+react-quill@2.0.0
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   peer 
+react@"^15.0.0 || ^16.0.0 || 
+^17.0.0 || ^18.0.0 || 
+^19.0.0" from @bkrem/react-tr
+ansition-group@1.3.5
+npm error   node_modules/@bkr
+em/react-transition-group
+npm error     @bkrem/react-tr
+ansition-group@"^1.3.5" from 
+react-d3-tree@3.6.6
+npm error     
+node_modules/react-d3-tree
+npm error       
+react-d3-tree@"^3.6.6" from 
+the root project
+npm error   peer 
+react@">=16.8.0" from 
+@emotion/react@11.14.0
+npm error   
+node_modules/@emotion/react
+npm error     
+@emotion/react@"^11.8.1" 
+from react-select@5.10.2
+npm error     
+node_modules/react-select
+npm error       
+react-select@"^5.10.2" from 
+the root project
+npm error   37 more (@emotion
+/use-insertion-effect-with-fa
+llbacks, ...)
+npm error
+npm error Could not resolve 
+dependency:
+npm error peer react@"^16 || 
+^17 || ^18" from 
+react-quill@2.0.0
+npm error 
+node_modules/react-quill
+npm error   
+react-quill@"^2.0.0" from 
+the root project
+npm error
+npm error Conflicting peer 
+dependency: react@18.3.1
+npm error node_modules/react
+npm error   peer react@"^16 
+|| ^17 || ^18" from 
+react-quill@2.0.0
+npm error   
+node_modules/react-quill
+npm error     
+react-quill@"^2.0.0" from 
+the root project
+npm error
+npm error Fix the upstream 
+dependency conflict, or retry
+npm error this command with 
+--force or --legacy-peer-deps
+npm error to accept an 
+incorrect (and potentially 
+broken) dependency 
+resolution.
+npm error
+npm error
+npm error For a full report 
+see:
+npm error C:\Users\LENOVO\App
+Data\Local\npm-cache\_logs\20
+26-03-09T08_37_34_667Z-eresol
+ve-report.txt
+npm error A complete log of 
+this run can be found in: C:\
+Users\LENOVO\AppData\Local\np
+m-cache\_logs\2026-03-09T08_3
+7_34_667Z-debug-0.log
+Failed to install required 
+TypeScript dependencies, 
+please install them manually 
+to continue:
+npm install --save-exact 
+--save-dev typescript 
+@types/react
+
+{
+  command: 'npm install 
+--save-exact --save-dev 
+typescript @types/react'
+}
+[?25h

@@ -1,0 +1,17 @@
+completed HRms: 
+    - Dashboard backend: PENDING
+    - Employee list page backend : PENDING
+    - Add employee: COMPLETED
+    - Employee documents upload backend: PENDING
+    - Department module - COMPLETED
+    - Designation module - COMPLETED
+    - leave management module Backend - COMPLETED
+    - Asset management module Backend - COMPLETED
+
+HRMS REFERENCE LINKS:
+    - https://themesdesign.in/tailwick/html/index.html
+    - https://demo.horilla.com/
+    - https://people.zoho.in/gohilinfotech/zp#home/myspace/overview-actionlist
+    - https://smarthr.co.in/demo/html/template/index
+    - https://nextjs-demo.tailadmin.com/
+    - https://synergy.helixbeat.com/login [8867773824 - Welcome@123]

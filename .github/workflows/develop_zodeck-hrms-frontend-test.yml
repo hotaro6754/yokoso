@@ -1,0 +1,41 @@
+name: Build and deploy Next.js app to Azure Web App - zodeck-hrms-frontend-test
+
+on:
+  push:
+    branches:
+      - develop
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # ✅ Use stable Node version
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # ✅ Faster + stable install
+      - name: Install dependencies
+        run: npm ci
+
+      # ✅ FIX: Increase memory for Next.js build
+      - name: Build Next.js app
+        run: NODE_OPTIONS="--max-old-space-size=6144" npm run build
+        env:
+          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
+
+      # ✅ Deploy
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: zodeck-hrms-frontend-test
+          slot-name: Production
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3B007CA777784A158CE774D621C6302E }}
+          package: .
+          clean: true
